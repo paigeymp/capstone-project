@@ -5,9 +5,7 @@ import Navigation from "./routes/navigation/navigation.component";
 const Shop = () => {
   return (
     <div>
-      <div>
-        <h1>Shop</h1>
-      </div>
+      <h1>Shop</h1>
     </div>
   );
 };
@@ -15,9 +13,10 @@ const Shop = () => {
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigation />} />
-      <Route index element={<Home />} />
-      <Route path="/" element={<Shop />} />
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="/" element={<Shop />} />
+      </Route>
     </Routes>
   );
 };
