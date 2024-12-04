@@ -5,7 +5,7 @@ import Navigation from "./routes/navigation/navigation.component";
 const Shop = () => {
   return (
     <div>
-      <h1>Shop</h1>
+      <h1>I am the shop page</h1>
     </div>
   );
 };
@@ -15,7 +15,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path="/" element={<Shop />} />
+        <Route path="/shop" element={<Shop />} />
+        {/* <Route path="/navigation" element={<Navigation />} /> */}
       </Route>
     </Routes>
   );
